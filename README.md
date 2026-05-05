@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# 📄 React Hook Form + Zod Contact Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient contact form built using **React Hook Form** and **Zod** for validation. This project demonstrates how to handle form state, validation, and error handling in a modern React application.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* ⚡ Fast form handling with React Hook Form
+* ✅ Schema-based validation using Zod
+* 📩 Form submission handling
+* ❌ Real-time error messages
+* 🎯 Clean and reusable form structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* React Hook Form
+* Zod
+* Axios (optional for API calls)
+* Tailwind CSS (if used for styling)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+src/
+│── components/
+│   └── ContactForm.jsx
+│── schemas/
+│   └── contactSchema.js
+│── App.jsx
+│── main.jsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/react-hook-form-zod-contact-form.git
 ```
+
+2. Navigate to the project:
+
+```bash
+cd react-hook-form-zod-contact-form
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🧠 Concepts Covered
+
+* `useForm` hook
+* `handleSubmit`
+* Form validation with Zod
+* Error handling in forms
+* Controlled vs uncontrolled inputs
+
+---
+
+## 📸 Demo
+
+<img width="1346" height="581" alt="Screenshot (23)" src="https://github.com/user-attachments/assets/2506cd4c-105c-4382-ad95-edeb0209b8c6" />
+
+
+---
+
+## 📌 Future Improvements
+
+* Add backend integration
+* Improve UI/UX
+* Add loading states
+* Deploy the project
+
+---
+
+
+
+
